@@ -1,0 +1,11 @@
+<script>
+// select the element that will be replaced
+var el = document.querySelector('li.et_pb_tab_8');
+
+// <a href="/javascript/manipulation/creating-a-dom-element-51/">create a new element</a> that will take the place of "el"
+var newEl = document.createElement('p');
+newEl.innerHTML = '<a class="watch-product-demo" href="https://www.playbookux.com/watch-our-demo" target="_blank"><img src="https://www.playbookux.com/wp-content/uploads/2020/08/play-icon.png" width="25px" style="margin-right:5px;margin-bottom: -7px;" /> Watch Product Demo</a>';
+
+// replace el with newEL
+el.parentNode.replaceChild(newEl, el);
+</script>
